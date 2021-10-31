@@ -1,0 +1,83 @@
+.Services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-top: 50px;
+    padding: 50px 2px;
+  }
+  .Services .title {
+    font-size: 30px;
+  }
+  
+  .secvice-list {
+    width: 95vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 5px auto;
+  }
+  
+  /* MENU ITEM STYLING */
+  
+  .Servicesitem{
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  .Servicesitem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .Servicesitem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Servicesitem h2 {
+      color: crimson;
+      margin: 4px 12px;
+      font-size: 17px;
+      left: 0px;
+      display: flex;
+  }
+  .Servicesitem p {
+    margin: 1px;
+    font-size: 14px;
+    left: 0;
+    display: flex;
+  }
+  
+  @media only screen and (max-width: 1003px) {
+    .secvice-list{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .secvice-list {
+      grid-template-columns: 1fr;
+    }
+    .secvice-list {
+      margin: 20px auto;
+ 
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .Servicesitem {
+      margin: 20px 20px 20px -20px;
+ 
+    }
+  }
